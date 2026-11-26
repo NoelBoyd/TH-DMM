@@ -1,0 +1,35 @@
+# --- Compilation Outputs ---
+# These are recreated every time you build the project.
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.o
+*.su
+*.d
+
+# --- IDE Specific (Global and Multi-Core) ---
+
+# 1. Ignore all .settings folders by default in root and subfolders
+**/.settings/*
+
+# 2. BUT: Keep the encoding settings so the "no encoding set" warning stays away
+!**/org.eclipse.core.resources.prefs
+
+# 3. Ignore other specific IDE junk files you listed
+**/com.st.stm32cube.ide.mcu.sfrview.prefs
+**/language.settings.xml
+**/stm32cubeide.project.prefs
+
+# --- Derived Tool Files ---
+# These are temporary files created during the build or debug process.
+.metadata/
+RemoteSystemsTempFiles/
+*.bak
+*.log
+
+# --- Static analysis reports ---
+cppcheck_*.txt
